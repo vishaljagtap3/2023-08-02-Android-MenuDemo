@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/mainGroup">
+        <item
+            android:id="@+id/menuInfo"
+            android:alphabeticShortcut="i"
+            android:checkable="true"
+            android:checked="true"
+            android:enabled="true"
+            android:icon="@drawable/info"
+            android:numericShortcut="9"
+            android:title="Info"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/menuHelp"
+            android:title="Help" />
+
+    </group>
+
+    <item
+        android:id="@+id/menuSettings"
+        android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/menuPhoneSettings"
+                android:title="Phone Settings" />
+            <item
+                android:id="@+id/menuSystemSettings"
+                android:title="System Settings" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menuExit"
+        android:title="Exit" />
+</menu>
